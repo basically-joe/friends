@@ -98,10 +98,24 @@ def test_food_likes__false
 end
 
 
-  # 4. For a given person, add a new name to their list of friends
-  # (e.g. the function add_friend(@person2, "Scrappy-Doo") should add Scrappy-Doo to the friends.)
-  # (hint: This function should not return anything. After the function call, check for the length of the friends array to test it!)
+  # # 4. For a given person, add a new name to their list of friends
+  # # (e.g. the function add_friend(@person2, "Scrappy-Doo") should
+  # add Scrappy-Doo to the friends.)
+  # # (hint: This function should not return anything. After the
+  # function call, check for the length of the friends array to test it!)
 
+# def test_add_new_name
+#   expected = ["Scrappy-Doo"]
+#   actual = add_new_name(@person5, "Scrappy-Doo")
+#   assert_equal(expected, actual)
+# end
+
+def test_add_new_name
+  expected = 1
+  add_new_name(@person5, "Scrappy-Doo")
+  actual = @person5[:friends].length
+  assert_equal(expected, actual)
+end
 
   # 5. For a given person, remove a specific name from their list of friends
   # (hint: Same as above, testing for the length of the array should be sufficient)
