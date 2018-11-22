@@ -104,11 +104,6 @@ end
   # # (hint: This function should not return anything. After the
   # function call, check for the length of the friends array to test it!)
 
-# def test_add_new_name
-#   expected = ["Scrappy-Doo"]
-#   actual = add_new_name(@person5, "Scrappy-Doo")
-#   assert_equal(expected, actual)
-# end
 
 def test_add_new_name
   expected = 1
