@@ -6,7 +6,7 @@ def get_tv_show(person)
 return person[:favourites][:tv_show]
 end
 
-def fav_snacks(person, snacks)
-  fav_snacks = person[:favourites][:snacks]
- return "true" if fav_snacks
+def fav_snacks(person, search_term)
+  fav_snacks = person[:favourites][:snacks][1]
+ return fav_snacks == search_term
 end

@@ -86,10 +86,17 @@ class TestFriends < MiniTest::Test
   #return true, likes_to_eat(@person3, "spinach") should return false)
 
 def test_food_likes
-  expected = "true"
+  expected = true
   actual = fav_snacks(@person2, "bread")
   assert_equal(expected, actual)
 end
+
+def test_food_likes__false
+  expected = false
+  actual = fav_snacks(@person2, "spinach")
+  assert_equal(expected, actual)
+end
+
 
   # 4. For a given person, add a new name to their list of friends
   # (e.g. the function add_friend(@person2, "Scrappy-Doo") should add Scrappy-Doo to the friends.)
